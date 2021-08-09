@@ -96,18 +96,77 @@ e.g., \textbf{Contrast Enhancement, Sharpening.}
 In this techniques the image is first transferred into frequency domain using Fourier Transform. Then the Enhancement operations are performed on Fourier transform of the image and then the Inverse Fourier Transform is calculated to get the resultant image.
 
 $f(x,y) \rightarrow F(u,v) rightarrow G(u,v) = H(u,v)F(u,v), G(u,v) \rightarrow g(x,y) $ \\
-e.g. \textbf{Lowpass, Highpass filtering.}
+e.g. \textbf{Low-pass, High-pass filtering.}
 \end{itemize}
 }
 \end{frame}
 \begin{frame}{Segmentation}
-
+\textbf{Image Segmentation}
+ is the process of partitioning a digital image into multiple segments (sets of pixels, also known as image objects). The goal of segmentation is to simplify and/or change the representation of an image into something that is more meaningful and easier to analyze. Image segmentation is typically used to locate objects and boundaries (lines, curves, etc.) in images. 
+ \begin{figure}[H]
+ \begin{center}
+ \includegraphics[scale=0.2]{coins.png}
+ \end{center}
+ \end{figure}
 \end{frame}
 
+\begin{frame}{Segmentation Techniques}
+There are various segmentation techniques. Some are mentioned below:
+\begin{itemize}
+\item Histogram Based \\
+\begin{enumerate}
+\item Thresholding
+\item Clustering
+\end{enumerate}
+\item Motion Based
+\item Discontinuity Based \\
+\begin{enumerate}
+\item Point detection
+\item Line detection
+\item Edge detection
+\end{enumerate}
+\item Similarity Based \\
+\begin{enumerate}
+\item Region growing
+\end{enumerate}
+\end{itemize}
+\end{frame}
 \begin{frame}{Object Recognition}
-
+\textbf{Object recognition} is a general term to describe a collection of related computer vision tasks that involve identifying objects in digital photographs.
+\\ [1ex]
+These tasks often comprises of the following tasks:-
+\\[1ex]
+\begin{figure}
+\begin{center}
+\includegraphics[scale=0.4]{obj.png}
+\end{center}
+\end{figure}
 \end{frame}
+\begin{frame}{Object Recognition Tasks}
+\small
+We can distinguish between these three computer vision tasks:
+\begin{itemize}
 
+\item \textbf{Image Classification:} Predict the type or class of an object in an image.
+\begin{itemize}
+\tiny
+\item \textbf{Input:} An image with a single object, such as a photograph.
+\item Output: A class label (e.g. one or more integers that are mapped to class labels).
+\end{itemize}
+\item \textbf{Object Localization:} Locate the presence of objects in an image and indicate their location with a bounding box.
+\begin{itemize}
+\tiny
+\item \textbf{Input:} An image with one or more objects, such as a photograph.
+\item \textbf{Output:} One or more bounding boxes (e.g. defined by a point, width, and height).
+\end{itemize}
+\item \textbf{Object Detection:} Locate the presence of objects with a bounding box and types or classes of the located objects in an image.
+\begin{itemize}
+\tiny
+\item \textbf{Input:} An image with one or more objects, such as a photograph.
+\item \textbf{Output:} One or more bounding boxes (e.g. defined by a point, width, and height), and a class label for each bounding box.
+\end{itemize}
+\end{itemize}
+\end{frame}
 \begin{frame}{Question and Answers}
 \begin{figure}
 \begin{center}
